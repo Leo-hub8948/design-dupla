@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 html {
@@ -10,7 +11,7 @@ html {
 }
 
 header {
-    padding: min(6vh, 5rem);
+    padding: min(5vh, 5rem);
     background-color: #00001f;
     width: 100%;
     display: flex;
@@ -23,30 +24,32 @@ header {
     left: 0;
 }
 
+
 header img {
-    width: 150px;
-    height: 140px;
+    width: 10rem; /*largura da imagem*/
+    height: auto;
 }
 
-header div nav ul {
+header nav ul {
     display: flex;
     gap: 20px;
 }
 
-header div nav ul li a {
+header nav a {
+    color: white;
+    font-size: 1.5rem;
     text-decoration: none;
-    color: #ddbfb1;
 }
 
-header div nav ul li a:hover {
-    transition: 0.5s;
-    color: #c88261;
-}
 
 .section-01 {
-    padding: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: min(20vh, 6rem);
     display: flex;
     background-color: #333f60;
+    width: 100%;
 }
 
 .div-pai {
@@ -59,20 +62,182 @@ header div nav ul li a:hover {
     z-index: 1;
 }
 
-.div-01 {
-    background-image: url(img/inte\ 1.jpg);
-    background-size: cover;
-    background-position: center;
+.section-02 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3ccefa;
+    width: 100%;
+    padding: min(20vh, 6rem);
 }
 
-.div-02 {
-    background-image: url(img/inte\ 2.jpg);
-    background-size: cover;
-    background-position: center;
+.div-01 p {
+    font-size: 2em;
+    margin: 1.2em;
+    color: lightsalmon;
 }
 
-.div-03 {
-    background-image: url(img/inte\ 3.jpg);
-    background-size: cover;
-    background-position: center;
+.div-02 img {
+    width: 25rem;
+    margin: 5rem auto;
+    display: block
+}
+
+.section-03 {
+    background-color: #d20000;
+    padding: min(20vh, 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section-03 img {
+    width: 15rem;
+}
+
+
+
+
+
+
+
+
+.div-02 img {
+    width: 25rem;
+    margin: 5rem auto;
+    display: block
+}
+
+.div-01 p {
+    font-size: 2em;
+    margin: 1.2em;
+    color: white;
+}
+
+.section-04 {
+    background-color: antiquewhite;
+    padding: min(20hv, 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.div-01 p {
+    font-size: 2em;
+    margin: 1.2em;
+}
+.pai {
+    display: flex; /* Cria um contêiner flexível */
+    position: relative; /* Permite que os elementos filhos sejam posicionados em relação a este contêiner */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    margin-bottom: 10rem; /* Adiciona espaço abaixo do contêiner */
+    flex-wrap: wrap; /* Permite que os itens se movam para uma nova linha se necessário */
+    z-index: 1; /* Define a ordem de sobreposição do contêiner */
+}
+
+.pai .card {
+    position: relative;
+    width: 200px; /* Define o tamanho do cartão */
+    height: 400px; /*Altura do Cartão*/
+    margin: 30px;/* Adiciona espaço ao redor de cada cartão */
+    box-shadow: 20px 20px 50px black (22, 12, 41, 0.699); /* Cria uma sombra ao redor do cartão */
+    border-radius: 15px;  /* Arredonda os cantos do cartão */
+    background: #f7114b (223, 167, 223, 0.288); /* Define uma cor de fundo com transparência */
+    justify-content: center; /*Justificando o conteúdo ao centro*/
+    align-items: center; /*Alinhando os itens ao centro*/
+    border-top: 1px solid #e79022 (255, 255, 255, 0.5); /*Borda superior*/
+    border-left: 1px solid #e79022 (255, 255, 255, 0.5);/*Borda esquerda*/
+}
+
+.contemt {
+    padding: 20px; /* Adiciona espaço interno ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    transform: translateY(50px); /* Move o conteúdo 50px para baixo inicialmente */
+    opacity: 0.2; /* Define a transparência inicial como 20% */
+    transition: 0.5s; /* Cria uma transição suave para mudanças nas propriedades */
+}
+
+contemt:hover {
+    transform: translateY(0px); /* Move o conteúdo para sua posição original ao passar o mouse */
+    opacity: 1;
+}
+
+.contemt h3 {
+    font-size: 1.8em; /* Define um tamanho de fonte para o subtítulo */
+    color: #606078 (41, 40, 40); /* Define a cor do subtítulo como um tom escuro */
+    z-index: 1; /* Define a ordem de sobreposição para garantir que o subtítulo esteja acima de outros elementos */
+}
+
+.contemt p {
+    font-size: 0.8em; /* Define um tamanho de fonte menor para o parágrafo */
+    color: #240910 (65, 63, 63); /* Define a cor do parágrafo como um tom escuro */
+    font-weight: 300; /* Define o peso da fonte como leve */
+    margin-top: 4rem; /* Adiciona uma margem superior de 4rem para espaçamento */
+}
+
+.contemt a {
+    position: relative; /* Define a posição do link como relativa, permitindo ajustes de posicionamento */
+    display: inline-block; /* Faz o link se comportar como um bloco inline */
+    padding: 8px 20px; /* Adiciona padding ao redor do texto do link */
+    margin-top: 2.7rem; /* Adiciona uma margem superior de 2.7rem para espaçamento */
+    background: white; /* Define o fundo do link como branco */
+    color: black;  /* Define a cor do texto do link como preto */
+    text-decoration: none;  /* Remove o sublinhado padrão dos links */
+    border-radius: 15px;  /* Arredonda os cantos do link */
+    font-weight: 500; /* Define o peso da fonte como seminegrito */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao redor do link para efeito de profundidade */
+}
+
+footer {
+    padding: min(10vh, 4rem);
+    background-color: #91334f ;
+    width: 100%; /* Corrigido de 100vw para 100% */
+}
+
+@media (max-width: 830px) {
+    header i {
+        font-size: 5.5em;
+        z-index: 999;
+    }
+
+ 
+
+.section-02 {
+    padding: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.div-01 p {
+font-size: 1.1rem;
+line-height: 1.5;
+text-align: left;
+padding: 2.3rem;
+width: 100%;
+margin: 1rem;
+}
+
+.div-02 img {
+    width: 7rem;
+    margin: 0 auto;
+}
+
+.div-01 p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: left;
+    padding: 2.3rem;
+    width: 100%;
+    margin: 1rem;
+}
+
+.div-02 img {
+    width: 10rem;
+    margin: auto;
 }
