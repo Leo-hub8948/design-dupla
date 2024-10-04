@@ -59,13 +59,8 @@ header nav a {
     align-items: center;
     padding: min(20vh, 6rem);
     display: flex;
-    background-color: #333f60;
+    background-color: #0e519f;
     width: 100%;
-
-    background: url(img/inte\ 1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .div-pai {
@@ -78,19 +73,13 @@ header nav a {
     z-index: 1;
 }
 
-.section-02 {
-    display: flex;
+.section-02 {display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #3ccefa;
+    background-color: #2662b2;
     width: 100%;
-    padding: min(20vh, 6rem);
+    padding: min(20vh, 6rem);}
 
-    background: url(img/inte\ 3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .div-01 p {
     font-size: 2em;
@@ -105,18 +94,12 @@ header nav a {
 }
 
 .section-03 {
-    background-color: #d20000;
+    background-color: #3e73c5;
     padding: min(20vh, 6rem);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-
-
-    background: url(img/abelhas.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .section-03 img {
@@ -238,6 +221,25 @@ footer {
     padding: min(10vh, 4rem);
     background-color: #91334f ;
     width: 100%; /* Corrigido de 100vw para 100% */
+    padding: min(10hv, 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+ .div-05 {
+    width: 8rem; /*largura da imagem*/
+    height: auto;
+ }
+
+
+.div-02 {
+    background-color: antiquewhite;
+    padding: min(10hv, 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 @media (max-width: 830px) {
