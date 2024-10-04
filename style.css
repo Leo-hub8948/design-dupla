@@ -11,36 +11,47 @@ html {
 }
 
 header {
-    padding: min(5vh, 5rem);
-    background-color: #00001f;
+    padding: min(1vh, 4rem);
+    background-color: #6e1e62;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    z-index: 888;
-    box-shadow: 0 0.21rem white;
+    z-index: 999;
+    box-shadow: 0 0.10rem white;
     top: 0;
     left: 0;
 }
 
 
 header img {
-    width: 10rem; /*largura da imagem*/
+    width: 8rem; /*largura da imagem*/
     height: auto;
 }
 
 header nav ul {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 header nav a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 01.5rem;
     text-decoration: none;
 }
 
+.whatsapp {
+    position: relative; /**/
+}
+
+.whatsapp img {
+    position: fixed;/*mantém a imgem em uma posição fixa na tela, mesmo ao rolar a página*/
+    bottom: 20px; /* Define a distância da imgem em relação á direta da tela*/
+    right: 20px;  /*Define a distância da imagem em relção á direita da tela*/
+    width: 5rem; /*define a largura da imagem com 5 unidades de rem(relativas ao tamanho da fonte)*/
+    height: auto;  /*Ajusta a altura da imagem automaticamente para manter a proporção*/
+}
 
 .section-01 {
     display: flex;
@@ -50,6 +61,11 @@ header nav a {
     display: flex;
     background-color: #333f60;
     width: 100%;
+
+    background: url(img/inte\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .div-pai {
@@ -69,6 +85,11 @@ header nav a {
     background-color: #3ccefa;
     width: 100%;
     padding: min(20vh, 6rem);
+
+    background: url(img/inte\ 3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .div-01 p {
@@ -90,12 +111,17 @@ header nav a {
     justify-content: center;
     align-items: center;
     width: 100%;
+
+
+    background: url(img/abelhas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-03 img {
     width: 15rem;
 }
-
 
 
 
@@ -117,7 +143,7 @@ header nav a {
 
 .section-04 {
     background-color: antiquewhite;
-    padding: min(20hv, 6rem);
+    padding: min(10hv, 6rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,6 +154,8 @@ header nav a {
     font-size: 2em;
     margin: 1.2em;
 }
+
+
 .pai {
     display: flex; /* Cria um contêiner flexível */
     position: relative; /* Permite que os elementos filhos sejam posicionados em relação a este contêiner */
@@ -160,9 +188,20 @@ header nav a {
     transition: 0.5s; /* Cria uma transição suave para mudanças nas propriedades */
 }
 
-contemt:hover {
+.contemt:hover {
     transform: translateY(0px); /* Move o conteúdo para sua posição original ao passar o mouse */
     opacity: 1;
+}
+
+
+
+.contemt h2 {
+    position: absolute; /* Posiciona o título de forma absoluta em relação ao contêiner pai */
+    right: 30px; /* Alinha o título 30px à direita do contêiner */
+    font-size: 0.8em; /* Define um tamanho de fonte para o subtítulo */
+    color: #606078 (41, 40, 40); /* Define a cor do subtítulo como um tom escuro */
+    z-index: 1; /* Define a ordem de sobreposição para garantir que o subtítulo esteja acima de outros elementos */
+    pointer-events: none; /* Desativa eventos de ponteiro, tornando o elemento não clicável */
 }
 
 .contemt h3 {
@@ -171,12 +210,16 @@ contemt:hover {
     z-index: 1; /* Define a ordem de sobreposição para garantir que o subtítulo esteja acima de outros elementos */
 }
 
+
+
 .contemt p {
-    font-size: 0.8em; /* Define um tamanho de fonte menor para o parágrafo */
+    font-size: 0.9em; /* Define um tamanho de fonte menor para o parágrafo */
     color: #240910 (65, 63, 63); /* Define a cor do parágrafo como um tom escuro */
     font-weight: 300; /* Define o peso da fonte como leve */
     margin-top: 4rem; /* Adiciona uma margem superior de 4rem para espaçamento */
 }
+
+
 
 .contemt a {
     position: relative; /* Define a posição do link como relativa, permitindo ajustes de posicionamento */
@@ -198,46 +241,54 @@ footer {
 }
 
 @media (max-width: 830px) {
+
+
     header i {
         font-size: 5.5em;
         z-index: 999;
     }
-
- 
-
-.section-02 {
+    
+    
+    
+    .section-02 {
     padding: 9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
-}
-
-.div-01 p {
-font-size: 1.1rem;
-line-height: 1.5;
-text-align: left;
-padding: 2.3rem;
-width: 100%;
-margin: 1rem;
-}
-
-.div-02 img {
-    width: 7rem;
-    margin: 0 auto;
-}
-
-.div-01 p{
+    }
+    
+    .div-01 p {
     font-size: 1.1rem;
     line-height: 1.5;
     text-align: left;
     padding: 2.3rem;
     width: 100%;
     margin: 1rem;
-}
-
-.div-02 img {
+    }
+    
+    .div-02 img {
+    width: 7rem;
+    margin: 0 auto;
+    }
+    
+    .div-01 p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: left;
+    padding: 2.3rem;
+    width: 100%;
+    margin: 1rem;
+    }
+    
+    .div-02 img {
     width: 10rem;
     margin: auto;
+    }
+    
+    
+    .whatsapp img {
+        width: 3.5rem;
+    }
 }
